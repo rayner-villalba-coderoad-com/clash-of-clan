@@ -1,4 +1,4 @@
-name: UPB Desplegando a un EC2
+name: UPB EC2
 on:
   push:
     branches:
@@ -9,6 +9,7 @@ jobs:
   steps:
     - name: Checkout Codigo
     uses: actions/checkout@v4
+    
     - name: Copy files via SCP
     uses: appleboy/scp-action@v1
       with:
